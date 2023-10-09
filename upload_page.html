@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTube - Upload Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!---------------------- NAVBAR -------------------->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="hamburger-menu" alt="hamburger-menu">
+            <a href="index.html"><img src="images/logo_yourtube.png" class="brand-logo" alt="logo"></a>
+
+
+        </div>
+        <div class="nav-middle flex-div">
+
+            <select class="div-toggle" id="profile" data-target=".my-choice">
+                <option value="entertainment">Entertainment</option>
+                <option value="information">Information</option>
+            </select>
+
+            <div class="profile-image" id="entertainment">
+                <img src="images/entertainment.png" alt="">
+            </div>
+            <div class="profile-image" id="information">
+                <img src="images/book.png" alt="">
+            </div>
+
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png" alt="search">
+            </div>
+            <img src="images/voice-search.png" class="mic-icon" alt="voice_search">
+        </div>
+        <div class="nav-right flex-div">
+            <a href="upload_page.html"><img src="images/upload.png" alt="upload_video"></a>
+            <img src="images/more.png" alt="more_options">
+            <img src="images/notification.png" alt="notifications">
+            <img src="images/purdue_pete.png" class="user-photo" alt="user_photo">
+
+        </div>
+
+    </nav>
+
+    <!---------------------- SIDEBAR -------------------->
+
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="home_page.html"><img src="images/home.png" alt="home_page_icon">
+                <p>Home</p>
+            </a>
+            <a href=""><img src="images/trending.png" alt="trending_icon">
+                <p>Trending</p>
+            </a>
+            <a href=""><img src="images/subscriprion.png" alt="subscription_icon">
+                <p>Subscription</p>
+            </a>
+            <hr>
+            <a href=""><img src="images/library.png" alt="library_icon">
+                <p>Library</p>
+            </a>
+            <a href=""><img src="images/history.png" alt="history_icon">
+                <p>History</p>
+            </a>
+            <a href=""><img src="images/playlist.png" alt="playlist_icon">
+                <p>Playlist</p>
+            </a>
+            <hr>
+            <a href=""><img src="images/settings.png" alt="settings_icon">
+                <p>Settings</p>
+            </a>
+            <a href=""><img src="images/help.png" alt="help_icon">
+                <p>Help</p>
+            </a>
+            <a href=""><img src="images/feedback.png" alt="subscription_icon">
+                <p>Feedback</p>
+            </a>
+        </div>
+        <hr>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="images/beast.png" alt="channel_con">
+                <p>Mr Beast</p>
+            </a>
+            <a href=""><img src="images/car_icon.png" alt="channel_con">
+                <p>Cars 360</p>
+            </a>
+            <a href=""><img src="images/travel_icon.png" alt="channel_con">
+                <p>Way2Go</p>
+            </a>
+            <a href=""><img src="images/lilly.png" alt="channel_con">
+                <p>Lilly Vlogs</p>
+            </a>
+
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="upload-container">
+            <h2>Upload a Video to YourTube</h2>
+            <br>
+            <form>
+                <label for="videoFile">Select a video to upload:</label>
+                <label class="custom-file-upload">
+                    <input type="file" name="videoFile" id="videoFile" accept="video/*" required>
+                </label>
+                <br>
+                <br>
+                <label for="videoTitle">Video Title</label>
+                <input type="text" name="videoTitle" id="videoTitle" required>
+                <br>
+                <br>
+                <label for="videoDescription">Video Description</label>
+                <textarea name="videoDescription" id="videoDescription" rows="4" required></textarea>
+                <br>
+                <br>
+                <label for="tags">Tags (comma-separated)</label>
+                <textarea name="tags" id="tags" rows="4" required></textarea>
+                <br>
+                <br>
+                <button type="submit">Upload Video</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- Images Courtesy: https://drive.google.com/file/d/1EM5G-hccHjEwWunOfHkNALzPCqluLzxu/view -->
+<!-- Reference1: https://www.youtube.com/watch?v=4ykAepVkG5Y -->
+<!-- Reference2: https://www.w3schools.com/ -->
+<!-- Reference3: https://www.geeksforgeeks.org/ -->
