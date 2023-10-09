@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTube - Video Play</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <!---------------------- NAVBAR -------------------->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="hamburger-menu" alt="hamburger-menu">
+            <a href="index.html"><img src="images/logo_yourtube.png" class="brand-logo" alt="logo"></a>
+
+
+        </div>
+        <div class="nav-middle flex-div">
+
+            <select class="div-toggle" id="profile" data-target=".my-choice">
+                <option value="entertainment">Entertainment</option>
+                <option value="information">Information</option>
+            </select>
+
+            <div class="profile-image" id="entertainment">
+                <img src="images/entertainment.png" alt="entertainment_logo">
+            </div>
+            <div class="profile-image" id="information">
+                <img src="images/book.png" alt="information_logo">
+            </div>
+
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png" alt="search">
+            </div>
+            <img src="images/voice-search.png" class="mic-icon" alt="voice_search">
+        </div>
+        <div class="nav-right flex-div">
+            <a href="upload_page.html"><img src="images/upload.png" alt="upload_video"></a>
+            <img src="images/more.png" alt="more_options">
+            <img src="images/notification.png" alt="notifications">
+            <img src="images/purdue_pete.png" class="user-photo_detail_page" alt="user_photo">
+            <label class="toggle">
+                <input type="checkbox" class="toggle-checkbox" onclick="recommendationModeFunction()" checked>
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Recommendations</span>
+            </label>
+        </div>
+
+    </nav>
+
+    <!---------------------- SIDEBAR -------------------->
+
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="home_page.html"><img src="images/home.png" alt="home_page_icon">
+                <p>Home</p>
+            </a>
+            <a href=""><img src="images/trending.png" alt="trending_icon">
+                <p>Trending</p>
+            </a>
+            <a href=""><img src="images/subscriprion.png" alt="subscription_icon">
+                <p>Subscription</p>
+            </a>
+            <hr>
+            <a href=""><img src="images/library.png" alt="library_icon">
+                <p>Library</p>
+            </a>
+            <a href=""><img src="images/history.png" alt="history_icon">
+                <p>History</p>
+            </a>
+            <a href=""><img src="images/playlist.png" alt="playlist_icon">
+                <p>Playlist</p>
+            </a>
+            <hr>
+            <a href=""><img src="images/settings.png" alt="settings_icon">
+                <p>Settings</p>
+            </a>
+            <a href=""><img src="images/help.png" alt="help_icon">
+                <p>Help</p>
+            </a>
+            <a href=""><img src="images/feedback.png" alt="subscription_icon">
+                <p>Feedback</p>
+            </a>
+        </div>
+        <hr>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="images/beast.png" alt="channel_con">
+                <p>Mr Beast</p>
+            </a>
+            <a href=""><img src="images/car_icon.png" alt="channel_con">
+                <p>Cars 360</p>
+            </a>
+            <a href=""><img src="images/travel_icon.png" alt="channel_con">
+                <p>Way2Go</p>
+            </a>
+            <a href=""><img src="images/lilly.png" alt="channel_con">
+                <p>Lilly Vlogs</p>
+            </a>
+
+        </div>
+        <hr>
+    </div>
+
+    <!---------------------- MAIN CONTENT -------------------->
+
+    <div class="container">
+        <div class="row">
+            <div class="play-video">
+                <video controls autoplay>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+
+                <div class="tags">
+                    <a href="">#Lakes</a> <a href="">#Mountains</a> <a href="">#Travel</a> <a href="">#Wanderlust</a> <a
+                        href="">#Nature</a>
+                </div>
+                <h3>Beautiful Lake View with Mountains</h3>
+
+                <div class="play-video-info">
+                    <p> 1M views &bull; 2 days ago
+                    <div>
+                        <a href=""><img src="images/like.png" alt="">400</a>
+                        <a href=""><img src="images/dislike.png" alt="">10</a>
+                        <a href=""><img src="images/share.png" alt="">Share</a>
+                        <a href=""><img src="images/save.png" alt="">Save</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="publisher">
+                    <img src="images/travel_icon.png" alt="">
+                    <div>
+                        <p>Way2Go</p>
+                        <span>746K Subscribers</span>
+                    </div>
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="vid-description">
+                    <p>Beautiful Lake View with Mountains</p>
+                    <p>Subscribe for more such content on Nature and Lakes</p>
+                    <hr>
+                    <h4>2 Comments</h4>
+
+                    <div class="add-comment">
+                        <img src="images/purdue_pete.png" alt="">
+                        <input type="text" placeholder="Write Comments...">
+                    </div>
+                    <div class="old-comments">
+                        <img src="images/megan.png" alt="">
+                        <div>
+                            <h3>Megan Johnson <span>3 hours ago</span></h3>
+                            <p>Very nice video! Please upload more such content.</p>
+                            <div class="comment-action">
+                                <img src="images/like.png" alt="">
+                                <span>5</span>
+                                <img src="images/dislike.png" alt="">
+                                <span>2</span>
+                                <span>Reply</span>
+                                <a href="">All Replies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="old-comments">
+                        <img src="images/gerard.png" alt="">
+                        <div>
+                            <h3>John Cena <span>18 hours ago</span></h3>
+                            <p>Adding this location to my bucket list!</p>
+                            <div class="comment-action">
+                                <img src="images/like.png" alt="">
+                                <span>100</span>
+                                <img src="images/dislike.png" alt="">
+                                <span>4</span>
+                                <span>Reply</span>
+                                <a href="">All Replies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="recommendations">
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail2.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">July 4th Holiday Vlog</a>
+                        <p>Mr Beast</p>
+                        <p> 20M views &bull; 10 days ago
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail3.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Shop with Me</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 20k views &bull; 7 days ago
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail4.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Lake Series | Day 1</a>
+                        <p>Way2Go</p>
+                        <p> 800k views &bull; 6 days ago
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail5.png" alt=""></a>
+
+                    <div class="vid-info">
+                        <a href="">Day out with friends</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 15k views &bull; 10 hours ago
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail6.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Orange Lamborghini</a>
+                        <p>Cars 360</p>
+                        <p> 600k views &bull; 5 days ago
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail7.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">DCU</a>
+                        <p>Mr Beast</p>
+                        <p> 2M views &bull; 1 days ago
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail8.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Yellow Lamborghini</a>
+                        <p>Cars 360</p>
+                        <p> 10k views &bull; 1 hour ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- Images Courtesy: https://drive.google.com/file/d/1EM5G-hccHjEwWunOfHkNALzPCqluLzxu/view -->
+<!-- Reference1: https://www.youtube.com/watch?v=4ykAepVkG5Y -->
+<!-- Reference2: https://www.w3schools.com/ -->
+<!-- Reference3: https://www.geeksforgeeks.org/ -->

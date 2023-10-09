@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTube - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!---------------------- NAVBAR -------------------->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="hamburger-menu" alt="hamburger-menu">
+            <a href="index.html"><img src="images/logo_yourtube.png" class="brand-logo" alt="logo"></a>
+
+
+        </div>
+        <div class="nav-middle flex-div">
+
+            <select class="div-toggle" id="profile" data-target=".my-choice">
+                <option value="entertainment">Entertainment</option>
+                <option value="information">Information</option>
+            </select>
+
+            <div class="profile-image" id="entertainment">
+                <img src="images/entertainment.png" alt="entertainment_logo">
+            </div>
+            <div class="profile-image" id="information">
+                <img src="images/book.png" alt="information_logo">
+            </div>
+
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png" alt="search">
+            </div>
+            <img src="images/voice-search.png" class="mic-icon" alt="voice_search">
+        </div>
+        <div class="nav-right flex-div">
+            <a href="upload_page.html"><img src="images/upload.png" alt="upload_video"></a>
+            <img src="images/more.png" alt="more_options">
+            <img src="images/notification.png" alt="notifications">
+            <img src="images/purdue_pete.png" class="user-photo" alt="user_photo">
+
+        </div>
+
+    </nav>
+
+    <!---------------------- SIDEBAR -------------------->
+
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="home_page.html"><img src="images/home.png" alt="home_page_icon">
+                <p>Home</p>
+            </a>
+            <a href=""><img src="images/trending.png" alt="trending_icon">
+                <p>Trending</p>
+            </a>
+            <a href=""><img src="images/subscriprion.png" alt="subscription_icon">
+                <p>Subscription</p>
+            </a>
+            <hr>
+            <a href=""><img src="images/library.png" alt="library_icon">
+                <p>Library</p>
+            </a>
+            <a href=""><img src="images/history.png" alt="history_icon">
+                <p>History</p>
+            </a>
+            <a href=""><img src="images/playlist.png" alt="playlist_icon">
+                <p>Playlist</p>
+            </a>
+            <hr>
+            <a href=""><img src="images/settings.png" alt="settings_icon">
+                <p>Settings</p>
+            </a>
+            <a href=""><img src="images/help.png" alt="help_icon">
+                <p>Help</p>
+            </a>
+            <a href=""><img src="images/feedback.png" alt="subscription_icon">
+                <p>Feedback</p>
+            </a>
+        </div>
+        <hr>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="images/beast.png" alt="channel_con">
+                <p>Mr Beast</p>
+            </a>
+            <a href=""><img src="images/car_icon.png" alt="channel_con">
+                <p>Cars 360</p>
+            </a>
+            <a href=""><img src="images/travel_icon.png" alt="channel_con">
+                <p>Way2Go</p>
+            </a>
+            <a href=""><img src="images/lilly.png" alt="channel_con">
+                <p>Lilly Vlogs</p>
+            </a>
+
+        </div>
+        <hr>
+    </div>
+
+    <!---------------------- MAIN CONTENT -------------------->
+
+    <div class="container">
+        <div class="top-filter">
+            <button class="top-filter-buttons">All</button>
+            <button class="top-filter-buttons">Travel</button>
+            <button class="top-filter-buttons">Cars</button>
+            <button class="top-filter-buttons">Recently Uploaded</button>
+            <button class="top-filter-buttons" id="filter-btn">More Filters</button>
+        </div>
+        <!---------------------- MODAL CONTENT -------------------->
+        <div id="filter-modal" class="filter-modal">
+
+            <div class="filter-modal-content">
+                <span class="filter-close">&times;</span>
+                <h3>Advanced Search</h3>
+                <select class="div-toggle-filter">
+                    <option value="duration">Targeted Duration</option>
+                    <option value="15">15 minutes</option>
+                    <option value="30">30 minutes</option>
+                    <option value="45">45 minutes</option>
+                    <option value="60">60 minutes</option>
+                </select>
+
+                <select class="div-toggle-filter">
+                    <option value="no-of-video">No of Videos</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+
+                <table>
+                    <tr>
+                        <th scope="col"><a href="">Upload Date</a></th>
+                        <th scope="col"><a href="">Type</a></th>
+                        <th scope="col"><a href="">Duration</a></th>
+                        <th scope="col"><a href="">Features</a></th>
+                        <th scope="col"><a href="">Sort By</a></th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Last hour</a></td>
+                        <td><a href="">Video</a></td>
+                        <td><a href="">Under 4 minutes</a></td>
+                        <td><a href="">Live</a></td>
+                        <td><a href="">Relevance</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Today</a></td>
+                        <td><a href="">Channel</a></td>
+                        <td><a href="">4-20 minutes</a></td>
+                        <td><a href="">4K</a></td>
+                        <td><a href="">Upload date</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">This week</a></td>
+                        <td><a href="">Playlist</a></td>
+                        <td><a href="">Over 20 minutes</a></td>
+                        <td><a href="">HD</a></td>
+                        <td><a href="">View count</a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="container-list">
+            <div class="vid-list">
+                <a href="detailed_page.html"><img src="images/thumbnail1.png" class="thumbnail" alt="thumbnail1"></a>
+                <div class="flex-div">
+                    <img src="images/travel_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="detailed_page.html">Beautiful Lake View with Mountains</a>
+                        <p>Way2Go</p>
+                        <p> 1M views &bull; 2 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail2.png" class="thumbnail" alt="thumbnail2"></a>
+                <div class="flex-div">
+                    <img src="images/beast.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">July 4th Holiday Vlog</a>
+                        <p>Mr Beast</p>
+                        <p> 20M views &bull; 10 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail3.png" class="thumbnail" alt="thumbnail3"></a>
+                <div class="flex-div">
+                    <img src="images/lilly.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Shop with Me</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 20k views &bull; 7 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail4.png" class="thumbnail" alt="thumbnail4"></a>
+                <div class="flex-div">
+                    <img src="images/travel_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Lake Series | Day 1</a>
+                        <p>Way2Go</p>
+                        <p> 800k views &bull; 6 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail5.png" class="thumbnail" alt="thumbnail5"></a>
+                <div class="flex-div">
+                    <img src="images/lilly.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Day out with friends</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 15k views &bull; 10 hours ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail6.png" class="thumbnail" alt="thumbnail6"></a>
+                <div class="flex-div">
+                    <img src="images/car_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Orange Lamborghini</a>
+                        <p>Cars 360</p>
+                        <p> 600k views &bull; 5 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail7.png" class="thumbnail" alt="thumbnail7"></a>
+                <div class="flex-div">
+                    <img src="images/beast.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">DCU</a>
+                        <p>Mr Beast</p>
+                        <p> 2M views &bull; 1 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail8.png" class="thumbnail" alt="thumbnail8"></a>
+                <div class="flex-div">
+                    <img src="images/car_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Yellow Lamborghini</a>
+                        <p>Cars 360</p>
+                        <p> 10k views &bull; 1 hour ago
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail1.png" class="thumbnail" alt="thumbnail1"></a>
+                <div class="flex-div">
+                    <img src="images/travel_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Beautiful Lake View with Mountains</a>
+                        <p>Way2Go</p>
+                        <p> 1M views &bull; 2 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail2.png" class="thumbnail" alt="thumbnail2"></a>
+                <div class="flex-div">
+                    <img src="images/beast.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">July 4th Holiday Vlog</a>
+                        <p>Mr Beast</p>
+                        <p> 20M views &bull; 10 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail3.png" class="thumbnail" alt="thumbnail3"></a>
+                <div class="flex-div">
+                    <img src="images/lilly.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Shop with Me</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 20k views &bull; 7 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail4.png" class="thumbnail" alt="thumbnail4"></a>
+                <div class="flex-div">
+                    <img src="images/travel_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Lake Series | Day 1</a>
+                        <p>Way2Go</p>
+                        <p> 800k views &bull; 6 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail5.png" class="thumbnail" alt="thumbnail5"></a>
+                <div class="flex-div">
+                    <img src="images/lilly.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Day out with friends</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 15k views &bull; 10 hours ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail6.png" class="thumbnail" alt="thumbnail6"></a>
+                <div class="flex-div">
+                    <img src="images/car_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Orange Lamborghini</a>
+                        <p>Cars 360</p>
+                        <p> 600k views &bull; 5 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail7.png" class="thumbnail" alt="thumbnail7"></a>
+                <div class="flex-div">
+                    <img src="images/beast.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">DCU</a>
+                        <p>Mr Beast</p>
+                        <p> 2M views &bull; 1 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail8.png" class="thumbnail" alt="thumbnail8"></a>
+                <div class="flex-div">
+                    <img src="images/car_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Yellow Lamborghini</a>
+                        <p>Cars 360</p>
+                        <p> 10k views &bull; 1 hour ago
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail1.png" class="thumbnail" alt="thumbnail1"></a>
+                <div class="flex-div">
+                    <img src="images/travel_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Beautiful Lake View with Mountains</a>
+                        <p>Way2Go</p>
+                        <p> 1M views &bull; 2 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail2.png" class="thumbnail" alt="thumbnail2"></a>
+                <div class="flex-div">
+                    <img src="images/beast.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">July 4th Holiday Vlog</a>
+                        <p>Mr Beast</p>
+                        <p> 20M views &bull; 10 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail3.png" class="thumbnail" alt="thumbnail3"></a>
+                <div class="flex-div">
+                    <img src="images/lilly.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Shop with Me</a>
+                        <p>Lilly Vlogs</p>
+                        <p> 20k views &bull; 7 days ago
+
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail4.png" class="thumbnail" alt="thumbnail4"></a>
+                <div class="flex-div">
+                    <img src="images/travel_icon.png" alt="channel_icon">
+                    <div class="vid-info">
+                        <a href="">Lake Series | Day 1</a>
+                        <p>Way2Go</p>
+                        <p> 800k views &bull; 6 days ago
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- Images Courtesy: https://drive.google.com/file/d/1EM5G-hccHjEwWunOfHkNALzPCqluLzxu/view -->
+<!-- Reference1: https://www.youtube.com/watch?v=4ykAepVkG5Y -->
+<!-- Reference2: https://www.w3schools.com/ -->
+<!-- Reference3: https://www.geeksforgeeks.org/ -->
